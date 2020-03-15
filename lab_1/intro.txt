@@ -1,0 +1,55 @@
+mkdir
+cd
+wget - pobranie pliku
+wget http://galaxy.agh.edu.pl/~amrozek/ak.html
+
+rozpakowanie pliku *.tar
+tar -xvf <nazwa pliku>
+
+Linux system calls:
+
+rax | 64 bity, accumulator
+rbx | base
+rcx | counter
+rdx | data
+rbp | base pointer
+rsp | stack pointer
+rsi | source index { esi, si, sil, sin }
+rdi | destination index
+
+r8 - 64 bit
+r8d - 32 bit (double word)
+r8w - 16 (word)
+r8b - 8 bit (byte)
+
+http://syscalls.kernelgrok.com/
+funkcje:
+4, 1,
+
+zarezerwuj na napis:
+bd - byte
+dw - word
+dd - double work (same as int)
+dq - poczwórne słowo
+10 - nowa linia
+
+./hello.asm
+db 'Hello!',10,0
+| H | E | L | L | O | endl; | NULL |
+$ - kolejne wolne mijesce
+
+mov - przesunięcie, dwa parametry
+cel, źródło
+rej, rej,
+pam, rej
+rej, pam,
+pam, stała
+
+kompilacja:
+nasm -f elf64 <nazwa pliku>
+
+http://galaxy.agh.edu.pl/~amrozek/abi.pdf
+strona 21
+
+często wykorzystywane:
+scanf(), printf()
